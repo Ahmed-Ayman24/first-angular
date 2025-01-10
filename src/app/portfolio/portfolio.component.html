@@ -1,0 +1,93 @@
+<section class="py-3 text-center">
+  <div class="container mt-5">
+    <div class="py-3">
+      <h1 class="text-uppercase text-dark fs-1 fw-bold pt-5">
+        portfolio component
+      </h1>
+      <div class="d-flex justify-content-center align-items-center text-dark">
+        <div class="line bg-dark me-3"></div>
+        <div><i class="fa-solid fa-star"></i></div>
+        <div class="line bg-dark ms-3"></div>
+      </div>
+    </div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5 mb-3">
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port1.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port1.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port2.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port2.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port3.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port3.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port1.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port1.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port2.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port2.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img src="assets/imgs/port3.png" class="w-100" alt="" />
+          <div
+            (click)="openModal('assets/imgs/port3.png')"
+            class="layer position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    @if (isClicked === true) {
+    <div
+      id="myModal"
+      (click)="closeModal()"
+      class="position-fixed top-0 bottom-0 start-0 end-0 bg-info opacity-50 bottom-0 d-flex justify-content-center align-items-center"
+    >
+    </div>
+    <div class="img-layer">
+      <img class="modal-content w-100" src="{{ path }}" />
+    </div>
+    }
+  </div>
+</section>

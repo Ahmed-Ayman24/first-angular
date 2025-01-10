@@ -1,0 +1,18 @@
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.contact-icons {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact-icons:hover {
+    color: #222324;
+    background: #f8f9fa;
+}
